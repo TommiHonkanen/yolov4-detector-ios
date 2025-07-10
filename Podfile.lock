@@ -1,0 +1,16 @@
+PODS:
+  - OpenCV (4.11.0)
+
+DEPENDENCIES:
+  - OpenCV (from `./OpenCV.podspec.json`)
+
+EXTERNAL SOURCES:
+  OpenCV:
+    :podspec: "./OpenCV.podspec.json"
+
+SPEC CHECKSUMS:
+  OpenCV: c4196fa09568b907267a210e0f49a2225d1d3f96
+
+PODFILE CHECKSUM: f714b4dd65f5fbf5349ee0ade6755c514c5c8354
+
+COCOAPODS: 1.15.2

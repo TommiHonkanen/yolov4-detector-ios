@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FF8DAEE93A9381030B6C277 /* Pods_yolov4_detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E55D5BCCCE87BAC55DBC9 /* Pods_yolov4_detector.framework */; };
+		97295D6E2E1EADD60061E5FC /* coco.names in Resources */ = {isa = PBXBuildFile; fileRef = 97295D572E1EADD60061E5FC /* coco.names */; };
+		97295D6F2E1EADD60061E5FC /* yolov4-tiny.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 97295D582E1EADD60061E5FC /* yolov4-tiny.cfg */; };
+		97295D702E1EADD60061E5FC /* yolov4-tiny.weights in Resources */ = {isa = PBXBuildFile; fileRef = 97295D592E1EADD60061E5FC /* yolov4-tiny.weights */; };
+		97295D712E1EADD60061E5FC /* DetectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D5D2E1EADD60061E5FC /* DetectorViewModel.swift */; };
+		97295D722E1EADD60061E5FC /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D5F2E1EADD60061E5FC /* Detection.swift */; };
+		97295D732E1EADD60061E5FC /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D612E1EADD60061E5FC /* CameraManager.swift */; };
+		97295D742E1EADD60061E5FC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D632E1EADD60061E5FC /* AboutView.swift */; };
+		97295D752E1EADD60061E5FC /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D642E1EADD60061E5FC /* CameraPreviewView.swift */; };
+		97295D772E1EADD60061E5FC /* DetectionOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D662E1EADD60061E5FC /* DetectionOverlayView.swift */; };
+		97295D782E1EADD60061E5FC /* ModelManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D672E1EADD60061E5FC /* ModelManagerView.swift */; };
+		97295D792E1EADD60061E5FC /* StatsOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D682E1EADD60061E5FC /* StatsOverlayView.swift */; };
+		97295D7A2E1EADD60061E5FC /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97295D6B2E1EADD60061E5FC /* OpenCVWrapper.mm */; };
+		97295D7B2E1EADD60061E5FC /* YOLOv4Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97295D6C2E1EADD60061E5FC /* YOLOv4Detector.swift */; };
+		97295D832E1EB4C00061E5FC /* yolov4-tiny-coco in Resources */ = {isa = PBXBuildFile; fileRef = 97295D822E1EB4C00061E5FC /* yolov4-tiny-coco */; };
+		978F63222E1E971700DCA4FA /* yolov4-detectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978F63212E1E971700DCA4FA /* yolov4-detectorApp.swift */; };
+		978F63242E1E971700DCA4FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978F63232E1E971700DCA4FA /* ContentView.swift */; };
+		978F63262E1E971800DCA4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978F63252E1E971800DCA4FA /* Assets.xcassets */; };
+		978F63292E1E971800DCA4FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978F63282E1E971800DCA4FA /* Preview Assets.xcassets */; };
+		97FF2E432E2007CB005D31A9 /* YOLOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF2E422E2007CB005D31A9 /* YOLOModel.swift */; };
+		97FF2E452E2007D7005D31A9 /* ModelImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF2E442E2007D7005D31A9 /* ModelImportView.swift */; };
+		97FF2E472E2007E7005D31A9 /* ModelFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF2E462E2007E7005D31A9 /* ModelFileParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52C65A60486D23F0A7AD89A3 /* Pods-yolov4-detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yolov4-detector.release.xcconfig"; path = "Target Support Files/Pods-yolov4-detector/Pods-yolov4-detector.release.xcconfig"; sourceTree = "<group>"; };
+		556E55D5BCCCE87BAC55DBC9 /* Pods_yolov4_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yolov4_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97295D572E1EADD60061E5FC /* coco.names */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.names; sourceTree = "<group>"; };
+		97295D582E1EADD60061E5FC /* yolov4-tiny.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yolov4-tiny.cfg"; sourceTree = "<group>"; };
+		97295D592E1EADD60061E5FC /* yolov4-tiny.weights */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yolov4-tiny.weights"; sourceTree = "<group>"; };
+		97295D5D2E1EADD60061E5FC /* DetectorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectorViewModel.swift; sourceTree = "<group>"; };
+		97295D5F2E1EADD60061E5FC /* Detection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		97295D612E1EADD60061E5FC /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		97295D632E1EADD60061E5FC /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		97295D642E1EADD60061E5FC /* CameraPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		97295D662E1EADD60061E5FC /* DetectionOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionOverlayView.swift; sourceTree = "<group>"; };
+		97295D672E1EADD60061E5FC /* ModelManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManagerView.swift; sourceTree = "<group>"; };
+		97295D682E1EADD60061E5FC /* StatsOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsOverlayView.swift; sourceTree = "<group>"; };
+		97295D6A2E1EADD60061E5FC /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		97295D6B2E1EADD60061E5FC /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		97295D6C2E1EADD60061E5FC /* YOLOv4Detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLOv4Detector.swift; sourceTree = "<group>"; };
+		97295D7C2E1EAECE0061E5FC /* yolov4-detector-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "yolov4-detector-Bridging-Header.h"; sourceTree = "<group>"; };
+		97295D822E1EB4C00061E5FC /* yolov4-tiny-coco */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "yolov4-tiny-coco"; path = "yolov4-detector/Resources/Models/yolov4-tiny-coco"; sourceTree = "<group>"; };
+		978F631E2E1E971700DCA4FA /* yolov4-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yolov4-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		978F63212E1E971700DCA4FA /* yolov4-detectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "yolov4-detectorApp.swift"; sourceTree = "<group>"; };
+		978F63232E1E971700DCA4FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		978F63252E1E971800DCA4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		978F63282E1E971800DCA4FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97FF2E422E2007CB005D31A9 /* YOLOModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLOModel.swift; sourceTree = "<group>"; };
+		97FF2E442E2007D7005D31A9 /* ModelImportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelImportView.swift; sourceTree = "<group>"; };
+		97FF2E462E2007E7005D31A9 /* ModelFileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFileParser.swift; sourceTree = "<group>"; };
+		F368CC86831E8A34519A6A3B /* Pods-yolov4-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yolov4-detector.debug.xcconfig"; path = "Target Support Files/Pods-yolov4-detector/Pods-yolov4-detector.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		978F631B2E1E971700DCA4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF8DAEE93A9381030B6C277 /* Pods_yolov4_detector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1473A0AD5387C753AE540FF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F368CC86831E8A34519A6A3B /* Pods-yolov4-detector.debug.xcconfig */,
+				52C65A60486D23F0A7AD89A3 /* Pods-yolov4-detector.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		512DC8A29CB5E06F02C5BD52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556E55D5BCCCE87BAC55DBC9 /* Pods_yolov4_detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97295D5A2E1EADD60061E5FC /* yolov4-tiny-coco */ = {
+			isa = PBXGroup;
+			children = (
+				97295D572E1EADD60061E5FC /* coco.names */,
+				97295D582E1EADD60061E5FC /* yolov4-tiny.cfg */,
+				97295D592E1EADD60061E5FC /* yolov4-tiny.weights */,
+			);
+			path = "yolov4-tiny-coco";
+			sourceTree = "<group>";
+		};
+		97295D5B2E1EADD60061E5FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97295D5A2E1EADD60061E5FC /* yolov4-tiny-coco */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97295D5C2E1EADD60061E5FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97295D5B2E1EADD60061E5FC /* Models */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97295D5E2E1EADD60061E5FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				97295D5D2E1EADD60061E5FC /* DetectorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		97295D602E1EADD60061E5FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97295D5F2E1EADD60061E5FC /* Detection.swift */,
+				97FF2E422E2007CB005D31A9 /* YOLOModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97295D622E1EADD60061E5FC /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				97295D612E1EADD60061E5FC /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		97295D692E1EADD60061E5FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97295D632E1EADD60061E5FC /* AboutView.swift */,
+				97295D642E1EADD60061E5FC /* CameraPreviewView.swift */,
+				978F63232E1E971700DCA4FA /* ContentView.swift */,
+				97FF2E442E2007D7005D31A9 /* ModelImportView.swift */,
+				97295D662E1EADD60061E5FC /* DetectionOverlayView.swift */,
+				97295D672E1EADD60061E5FC /* ModelManagerView.swift */,
+				97295D682E1EADD60061E5FC /* StatsOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97295D6D2E1EADD60061E5FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				97295D6A2E1EADD60061E5FC /* OpenCVWrapper.h */,
+				97FF2E462E2007E7005D31A9 /* ModelFileParser.swift */,
+				97295D6B2E1EADD60061E5FC /* OpenCVWrapper.mm */,
+				97295D6C2E1EADD60061E5FC /* YOLOv4Detector.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		978F63152E1E971700DCA4FA = {
+			isa = PBXGroup;
+			children = (
+				978F63202E1E971700DCA4FA /* yolov4-detector */,
+				978F631F2E1E971700DCA4FA /* Products */,
+				1473A0AD5387C753AE540FF1 /* Pods */,
+				512DC8A29CB5E06F02C5BD52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		978F631F2E1E971700DCA4FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				978F631E2E1E971700DCA4FA /* yolov4-detector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		978F63202E1E971700DCA4FA /* yolov4-detector */ = {
+			isa = PBXGroup;
+			children = (
+				97295D7C2E1EAECE0061E5FC /* yolov4-detector-Bridging-Header.h */,
+				97295D622E1EADD60061E5FC /* Camera */,
+				97295D6D2E1EADD60061E5FC /* Core */,
+				97295D602E1EADD60061E5FC /* Models */,
+				97295D5C2E1EADD60061E5FC /* Resources */,
+				97295D5E2E1EADD60061E5FC /* ViewModels */,
+				97295D692E1EADD60061E5FC /* Views */,
+				978F63212E1E971700DCA4FA /* yolov4-detectorApp.swift */,
+				978F63252E1E971800DCA4FA /* Assets.xcassets */,
+				978F63272E1E971800DCA4FA /* Preview Content */,
+			);
+			path = "yolov4-detector";
+			sourceTree = "<group>";
+		};
+		978F63272E1E971800DCA4FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				978F63282E1E971800DCA4FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		978F631D2E1E971700DCA4FA /* yolov4-detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 978F632C2E1E971800DCA4FA /* Build configuration list for PBXNativeTarget "yolov4-detector" */;
+			buildPhases = (
+				C0D8F2A71937F89C6C3D8DB8 /* [CP] Check Pods Manifest.lock */,
+				978F631A2E1E971700DCA4FA /* Sources */,
+				978F631B2E1E971700DCA4FA /* Frameworks */,
+				978F631C2E1E971700DCA4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yolov4-detector";
+			productName = "yolov4-detector";
+			productReference = 978F631E2E1E971700DCA4FA /* yolov4-detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		978F63162E1E971700DCA4FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					978F631D2E1E971700DCA4FA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 978F63192E1E971700DCA4FA /* Build configuration list for PBXProject "yolov4-detector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 978F63152E1E971700DCA4FA;
+			productRefGroup = 978F631F2E1E971700DCA4FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				978F631D2E1E971700DCA4FA /* yolov4-detector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		978F631C2E1E971700DCA4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97295D832E1EB4C00061E5FC /* yolov4-tiny-coco in Resources */,
+				97295D6E2E1EADD60061E5FC /* coco.names in Resources */,
+				97295D6F2E1EADD60061E5FC /* yolov4-tiny.cfg in Resources */,
+				97295D702E1EADD60061E5FC /* yolov4-tiny.weights in Resources */,
+				978F63292E1E971800DCA4FA /* Preview Assets.xcassets in Resources */,
+				978F63262E1E971800DCA4FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0D8F2A71937F89C6C3D8DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yolov4-detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		978F631A2E1E971700DCA4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978F63242E1E971700DCA4FA /* ContentView.swift in Sources */,
+				97295D722E1EADD60061E5FC /* Detection.swift in Sources */,
+				97FF2E472E2007E7005D31A9 /* ModelFileParser.swift in Sources */,
+				978F63222E1E971700DCA4FA /* yolov4-detectorApp.swift in Sources */,
+				97295D792E1EADD60061E5FC /* StatsOverlayView.swift in Sources */,
+				97295D782E1EADD60061E5FC /* ModelManagerView.swift in Sources */,
+				97295D752E1EADD60061E5FC /* CameraPreviewView.swift in Sources */,
+				97295D712E1EADD60061E5FC /* DetectorViewModel.swift in Sources */,
+				97FF2E452E2007D7005D31A9 /* ModelImportView.swift in Sources */,
+				97295D7B2E1EADD60061E5FC /* YOLOv4Detector.swift in Sources */,
+				97295D7A2E1EADD60061E5FC /* OpenCVWrapper.mm in Sources */,
+				97295D742E1EADD60061E5FC /* AboutView.swift in Sources */,
+				97FF2E432E2007CB005D31A9 /* YOLOModel.swift in Sources */,
+				97295D772E1EADD60061E5FC /* DetectionOverlayView.swift in Sources */,
+				97295D732E1EADD60061E5FC /* CameraManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		978F632A2E1E971800DCA4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		978F632B2E1E971800DCA4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		978F632D2E1E971800DCA4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F368CC86831E8A34519A6A3B /* Pods-yolov4-detector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yolov4-detector/Preview Content\"";
+				DEVELOPMENT_TEAM = S4FKG778GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "YOLOv4 Detector";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app needs camera access to detect objects\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.tommihonkanen.yolov4-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/yolov4-detector/yolov4-detector-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		978F632E2E1E971800DCA4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C65A60486D23F0A7AD89A3 /* Pods-yolov4-detector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yolov4-detector/Preview Content\"";
+				DEVELOPMENT_TEAM = S4FKG778GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "YOLOv4 Detector";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app needs camera access to detect objects\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.tommihonkanen.yolov4-detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/yolov4-detector/yolov4-detector-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		978F63192E1E971700DCA4FA /* Build configuration list for PBXProject "yolov4-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978F632A2E1E971800DCA4FA /* Debug */,
+				978F632B2E1E971800DCA4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		978F632C2E1E971800DCA4FA /* Build configuration list for PBXNativeTarget "yolov4-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978F632D2E1E971800DCA4FA /* Debug */,
+				978F632E2E1E971800DCA4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 978F63162E1E971700DCA4FA /* Project object */;
+}
